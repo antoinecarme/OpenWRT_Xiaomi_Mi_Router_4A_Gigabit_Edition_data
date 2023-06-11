@@ -1,0 +1,1696 @@
+============ start debug info ============
+libhd version 21.71 (mips) [6472]
+using /var/lib/hardware
+kernel version is 5.10
+----- /proc/cmdline -----
+  console=ttyS0,115200n8 rootfstype=squashfs,jffs2
+----- /proc/cmdline end -----
+debug = 0xff7ffff7
+probe = 0x15938fcda8107cf9fffe (+memory +pci +isapnp +net +floppy +misc +misc.serial +misc.par +misc.floppy +serial +cpu +bios +monitor +mouse +scsi +usb -usb.mods +modem +modem.usb +parallel +parallel.lp +parallel.zip -isa -isa.isdn +isdn +kbd +prom +sbus +int -braille -braille.alva -braille.fhp -braille.ht -ignx11 +sys -bios.vbe -isapnp.old -isapnp.new -isapnp.mod -braille.baum -manual +fb +pppoe -scan +pcmcia +fork -parallel.imm +s390 +cpuemu -sysfs -s390disks +udev +block +block.cdrom +block.part +edd +edd.mod -bios.ddc -bios.fb -bios.mode +input +block.mods +bios.vesa -cpuemu.debug -scsi.noserial +wlan -bios.crc -hal +bios.vram +bios.acpi -bios.ddc.ports=0 +modules.pata -net.eeprom +x86emu=dump -max -lxrc)
+shm: attached segment 0 at 0x7797e000
+>> hal.1: read hal data
+>> floppy.1: get nvram
+>> floppy.2: klog info
+>> sys.1: cpu
+>> misc.9: kernel log
+>> misc.1: misc data
+>> misc.1.1: open serial
+>> misc.1.2: open parallel
+>> misc.2.1: io
+>> misc.2.2: dma
+>> misc.2.3: irq
+----- /proc/ioports -----
+----- /proc/ioports end -----
+----- /proc/interrupts -----
+    7:          0          0          0          0      MIPS   7  timer
+    8:      43842      43825      43816      43809  MIPS GIC Local   1  timer
+    9:      66436          0          0          0  MIPS GIC  63  IPI call
+   10:          0      90168          0          0  MIPS GIC  64  IPI call
+   11:          0          0      98239          0  MIPS GIC  65  IPI call
+   12:          0          0          0      90657  MIPS GIC  66  IPI call
+   13:       6812          0          0          0  MIPS GIC  67  IPI resched
+   14:          0       9687          0          0  MIPS GIC  68  IPI resched
+   15:          0          0      16916          0  MIPS GIC  69  IPI resched
+   16:          0          0          0      14102  MIPS GIC  70  IPI resched
+   17:          0          0          0          0  MIPS GIC  19  1e000600.gpio-bank0, 1e000600.gpio-bank1, 1e000600.gpio-bank2
+   19:         12          0          0          0  MIPS GIC  33  ttyS0
+   21:       2820          0          0          0  MIPS GIC  10  1e100000.ethernet
+   22:          2          0      16394          0  MIPS GIC  11  mt76x2e
+   23:         23          0          0      37546  MIPS GIC  31  mt7603e
+   25:          8          0          0          0  MIPS GIC  30  mt7530
+   26:          0          0          0          0    mt7530   2  mt7530-0:02
+   27:          5          0          0          0    mt7530   3  mt7530-0:03
+   28:          3          0          0          0    mt7530   4  mt7530-0:04
+   29:          0          0          0          0  1e000600.gpio  18  keys
+  ERR:          0
+----- /proc/interrupts end -----
+----- /proc/dma -----
+----- /proc/dma end -----
+>> misc.3: FPU
+>> misc.3.1: DMA
+>> misc.3.2: PIC
+>> misc.3.3: timer
+>> misc.3.4: RTC
+>> cpu.1: cpuinfo
+----- /proc/cpuinfo -----
+  system type		: MediaTek MT7621 ver:1 eco:3
+  machine			: Xiaomi Mi Router 4A Gigabit Edition
+  processor		: 0
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 0
+  VPE			: 0
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 1
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 0
+  VPE			: 1
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 2
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 1
+  VPE			: 0
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 3
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 1
+  VPE			: 1
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+----- /proc/cpuinfo end -----
+>> memory.1: main memory size
+  kcore mem:  0x0
+  klog mem 0: 0x0
+  klog mem 1: 0x0
+  klog mem:   0x0
+  bios mem:   0x0
+  meminfo:    0x75e5000
+  xen balloon:    0x0
+>> pci.1: sysfs drivers
+----- sysfs driver list (id 0xddf985f06c63c243) -----
+       reg-dummy: /devices/platform/reg-dummy
+       of_serial: /devices/platform/1e000000.palmbus/1e000c00.uartlite
+     mt7621_gpio: /devices/platform/1e000000.palmbus/1e000600.gpio
+     mtk_soc_eth: /devices/platform/1e100000.ethernet
+       gpio-keys: /devices/platform/keys
+       gpio-keys: module = gpio_button_hotplug
+      spi-mt7621: /devices/platform/1e000000.palmbus/1e000b00.spi
+  mt7621-pci-phy: /devices/platform/1e149000.pcie-phy
+  mt7621-pci-phy: /devices/platform/1e14a000.pcie-phy
+       leds-gpio: /devices/platform/leds
+       leds-gpio: module = leds_gpio
+      mt7621-pci: /devices/platform/1e140000.pcie
+   rt2880-pinmux: /devices/platform/pinctrl
+gpio-keys-polled: module = gpio_button_hotplug
+       mt76_wmac: module = mt7603e
+      serial8250: /devices/platform/serial8250
+      mt7621_wdt: /devices/platform/1e000000.palmbus/1e000100.wdt
+         mt7603e: module = mt7603e
+         mt7603e: /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+         mt76x2e: module = mt76x2e
+         mt76x2e: /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+          mt7530: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+MediaTek MT7530 PHY: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:03
+MediaTek MT7530 PHY: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:04
+MediaTek MT7530 PHY: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:02
+         spi-nor: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0
+----- sysfs driver list end -----
+>> pci.2: get sysfs pci data
+  pci device: name = 0000:00:00.0
+    path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0
+    modalias = "pci:v00000E8Dd00000801sv00000000sd00000000bc06sc04i00"
+    class = 0x60400
+    vendor = 0xe8d
+    device = 0x801
+    subvendor = 0x0
+    subdevice = 0x0
+    irq = 255
+    res[1] = 0x60400000 0x6040ffff 0x40200
+    config[64]
+  pci device: name = 0000:00:01.0
+    path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0
+    modalias = "pci:v00000E8Dd00000801sv00000000sd00000000bc06sc04i00"
+    class = 0x60400
+    vendor = 0xe8d
+    device = 0x801
+    subvendor = 0x0
+    subdevice = 0x0
+    irq = 255
+    res[1] = 0x60410000 0x6041ffff 0x40200
+    config[64]
+  pci device: name = 0000:02:00.0
+    path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+    modalias = "pci:v000014C3d00007603sv000014C3sd00007603bc02sc80i00"
+    class = 0x28000
+    vendor = 0x14c3
+    device = 0x7603
+    subvendor = 0x14c3
+    subdevice = 0x7603
+    irq = 23
+    res[0] = 0x60200000 0x602fffff 0x40200
+    config[64]
+  pci device: name = 0000:01:00.0
+    path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+    modalias = "pci:v000014C3d00007662sv000014C3sd00007662bc02sc80i00"
+    class = 0x28000
+    vendor = 0x14c3
+    device = 0x7662
+    subvendor = 0x14c3
+    subdevice = 0x7662
+    irq = 22
+    res[0] = 0x60000000 0x600fffff 0x140204
+    res[6] = 0x60100000 0x6010ffff 0x46200
+    config[64]
+---------- PCI raw data ----------
+bus 00->01, slot 00, func 0, vend:dev:s_vend:s_dev:rev 0e8d:0801:0000:0000:01
+class 06, sub_class 04 prog_if 00, hdr 1, flags <>, irq 255
+  addr1 60400000, size 00010000
+  00: 8d 0e 01 08 07 00 10 00 01 00 04 06 00 00 01 00  "................"
+  10: 00 00 00 00 00 00 40 60 00 01 01 00 00 00 00 00  "......@`........"
+  20: 00 60 00 60 10 60 10 60 00 00 00 00 00 00 00 00  ".`.`.`.`........"
+  30: 00 00 00 00 40 00 00 00 00 00 00 00 ff 01 02 00  "....@..........."
+
+bus 00->02, slot 01, func 0, vend:dev:s_vend:s_dev:rev 0e8d:0801:0000:0000:01
+class 06, sub_class 04 prog_if 00, hdr 1, flags <>, irq 255
+  addr1 60410000, size 00010000
+  00: 8d 0e 01 08 07 00 10 00 01 00 04 06 00 00 01 00  "................"
+  10: 00 00 00 00 00 00 41 60 00 02 02 00 10 10 00 00  "......A`........"
+  20: 20 60 20 60 30 60 30 60 00 00 00 00 00 00 00 00  " ` `0`0`........"
+  30: 00 00 00 00 40 00 00 00 00 00 00 00 ff 01 02 00  "....@..........."
+
+bus 02, slot 00, func 0, vend:dev:s_vend:s_dev:rev 14c3:7603:14c3:7603:00
+class 02, sub_class 80 prog_if 00, hdr 0, flags <pm>, irq 23
+  addr0 60200000, size 00100000
+  00: c3 14 03 76 06 00 10 00 00 00 80 02 00 00 00 00  "...v............"
+  10: 00 00 20 60 00 00 00 00 00 00 00 00 00 00 00 00  ".. `............"
+  20: 00 00 00 00 00 00 00 00 00 00 00 00 c3 14 03 76  "...............v"
+  30: 00 00 00 00 40 00 00 00 00 00 00 00 17 01 00 00  "....@..........."
+  40: 01 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ".P.............."
+  50: 05 70 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ".p.............."
+  60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  "................"
+  70: 10 00  ".."
+
+bus 01, slot 00, func 0, vend:dev:s_vend:s_dev:rev 14c3:7662:14c3:7662:00
+class 02, sub_class 80 prog_if 00, hdr 0, flags <pm>, irq 22
+  addr0 60000000, size 00100000
+  00: c3 14 62 76 06 00 10 00 00 00 80 02 00 00 00 00  "..bv............"
+  10: 04 00 00 60 00 00 00 00 00 00 00 00 00 00 00 00  "...`............"
+  20: 00 00 00 00 00 00 00 00 00 00 00 00 c3 14 62 76  "..............bv"
+  30: 00 00 00 00 40 00 00 00 00 00 00 00 16 01 00 00  "....@..........."
+  40: 01 50 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ".P.............."
+  50: 05 70 00 00 00 00 00 00 00 00 00 00 00 00 00 00  ".p.............."
+  60: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00  "................"
+  70: 10 00  ".."
+---------- PCI raw data end ----------
+>> pci.4: build list
+>> pci.3: macio
+sysfs: no such bus: macio
+>> pci.4: vio
+sysfs: no such bus: vio
+>> pci.5: xen
+sysfs: no such bus: xen
+>> pci.6: ps3
+sysfs: no such bus: ps3_system_bus
+>> pci.7: platform
+  platform device: name = reg-dummy
+    path = /devices/platform/reg-dummy
+    type = "", modalias = "platform:reg-dummy", driver = "reg-dummy"
+  platform device: name = 1e000c00.uartlite
+    path = /devices/platform/1e000000.palmbus/1e000c00.uartlite
+    type = "uartlite", modalias = "of:NuartliteT(null)Cns16550a", driver = "of_serial"
+  platform device: name = 1e140000.pcie
+    path = /devices/platform/1e140000.pcie
+    type = "pcie", modalias = "of:NpcieTpciCmediatek,mt7621-pci", driver = "mt7621-pci"
+    is net: interface = /sys/devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0/net/wlan0
+    is net: interface = /sys/devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/net/wlan1
+  platform device: name = regulatory.0
+    path = /devices/platform/regulatory.0
+    type = "", modalias = "platform:regulatory", driver = ""
+  platform device: name = clkctrl
+    path = /devices/platform/clkctrl
+    type = "clkctrl", modalias = "of:NclkctrlT(null)Cralink,rt2880-clock", driver = ""
+  platform device: name = 1e000600.gpio
+    path = /devices/platform/1e000000.palmbus/1e000600.gpio
+    type = "gpio", modalias = "of:NgpioT(null)Cmediatek,mt7621-gpio", driver = "mt7621_gpio"
+  platform device: name = 1e005000.syscon
+    path = /devices/platform/1e000000.palmbus/1e005000.syscon
+    type = "syscon", modalias = "of:NsysconT(null)Cmtk,mt7621-memcCsyscon", driver = ""
+  platform device: name = 1e149000.pcie-phy
+    path = /devices/platform/1e149000.pcie-phy
+    type = "pcie-phy", modalias = "of:Npcie-phyT(null)Cmediatek,mt7621-pci-phy", driver = "mt7621-pci-phy"
+  platform device: name = 1fbf0000.cpc
+    path = /devices/platform/1fbf0000.cpc
+    type = "cpc", modalias = "of:NcpcT(null)Cmti,mips-cpc", driver = ""
+  platform device: name = 1e000500.systick
+    path = /devices/platform/1e000000.palmbus/1e000500.systick
+    type = "systick", modalias = "of:NsystickT(null)Cralink,mt7621-systickCralink,cevt-systick", driver = ""
+  platform device: name = leds
+    path = /devices/platform/leds
+    type = "leds", modalias = "of:NledsT(null)Cgpio-leds", driver = "leds-gpio"
+  platform device: name = 1e000000.syscon
+    path = /devices/platform/1e000000.palmbus/1e000000.syscon
+    type = "syscon", modalias = "of:NsysconT(null)Cmtk,mt7621-syscCsyscon", driver = ""
+  platform device: name = 1e000b00.spi
+    path = /devices/platform/1e000000.palmbus/1e000b00.spi
+    type = "spi", modalias = "of:NspiT(null)Cralink,mt7621-spi", driver = "spi-mt7621"
+  platform device: name = 1e000100.wdt
+    path = /devices/platform/1e000000.palmbus/1e000100.wdt
+    type = "wdt", modalias = "of:NwdtT(null)Cmediatek,mt7621-wdt", driver = "mt7621_wdt"
+  platform device: name = 1e000b00.spi:flash@0:partitions:partition@180000
+    path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/1e000b00.spi:flash@0:partitions:partition@180000
+    type = "partition", modalias = "of:NpartitionT(null)Cdenx,uimage", driver = ""
+  platform device: name = keys
+    path = /devices/platform/keys
+    type = "keys", modalias = "of:NkeysT(null)Cgpio-keys", driver = "gpio-keys"
+  platform device: name = 1e000b00.spi:flash@0:partitions:partition@50000
+    path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/1e000b00.spi:flash@0:partitions:partition@50000
+    type = "partition", modalias = "of:NpartitionT(null)Cnvmem-cells", driver = ""
+  platform device: name = 1e100000.ethernet
+    path = /devices/platform/1e100000.ethernet
+    type = "ethernet", modalias = "of:NethernetT(null)Cmediatek,mt7621-eth", driver = "mtk_soc_eth"
+    is net: interface = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net/lan1
+    is net: interface = /sys/devices/platform/1e100000.ethernet/net/eth0
+    is net: interface = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net/lan2
+    is net: interface = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net/wan
+  platform device: name = 1e000000.palmbus
+    path = /devices/platform/1e000000.palmbus
+    type = "palmbus", modalias = "of:NpalmbusT(null)Cpalmbus", driver = ""
+  platform device: name = Fixed MDIO bus.0
+    path = /devices/platform/Fixed MDIO bus.0
+    type = "", modalias = "platform:Fixed MDIO bus", driver = ""
+  platform device: name = serial8250
+    path = /devices/platform/serial8250
+    type = "", modalias = "platform:serial8250", driver = "serial8250"
+  platform device: name = rstctrl
+    path = /devices/platform/rstctrl
+    type = "rstctrl", modalias = "of:NrstctrlT(null)Cralink,rt2880-reset", driver = ""
+  platform device: name = 1e1c0000.xhci
+    path = /devices/platform/1e1c0000.xhci
+    type = "xhci", modalias = "of:NxhciT(null)Cmediatek,mt8173-xhci", driver = ""
+  platform device: name = pinctrl
+    path = /devices/platform/pinctrl
+    type = "pinctrl", modalias = "of:NpinctrlT(null)Cralink,rt2880-pinmux", driver = "rt2880-pinmux"
+  platform device: name = 1e14a000.pcie-phy
+    path = /devices/platform/1e14a000.pcie-phy
+    type = "pcie-phy", modalias = "of:Npcie-phyT(null)Cmediatek,mt7621-pci-phy", driver = "mt7621-pci-phy"
+  platform device: name = 1fbf8000.mc
+    path = /devices/platform/1fbf8000.mc
+    type = "mc", modalias = "of:NmcT(null)Cmti,mips-cdmm", driver = ""
+>> pci.8: of_platform
+sysfs: no such bus: of_platform
+>> pci.9: vm
+sysfs: no such bus: vm
+>> pci.10: virtio
+sysfs: no such bus: virtio
+>> pci.11: ibmebus
+sysfs: no such bus: ibmebus
+>> pci.12: uisvirtpci
+sysfs: no such bus: uisvirtpci
+>> pci.13: mmc
+sysfs: no such bus: mmc
+>> pci.14: sdio
+sysfs: no such bus: sdio
+>> pci.15: nd
+sysfs: no such bus: nd
+>> pci.16: visorbus
+sysfs: no such bus: visorbus
+>> pci.17: mdio
+  mdio device: name = mt7530-0:03
+    path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:03
+  mdio device: name = mdio-bus:1f
+    path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+    mdio net: sf_eth_net = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net, if = lan1
+    mdio net: sf_eth_net = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net, if = lan2
+    mdio net: sf_eth_net = /sys/devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/net, if = wan
+  mdio device: name = mt7530-0:04
+    path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:04
+  mdio device: name = mt7530-0:02
+    path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f/mdio_bus/mt7530-0/mt7530-0:02
+>> monitor.1: ddc
+>> monitor.2: bios
+>> monitor.3: pci
+>> monitor.4: internal db
+>> monitor.5: prom
+>> pcmcia.1: sysfs drivers
+>> pcmcia.2: pcmcia
+sysfs: no such bus: pcmcia
+>> pcmcia.3: pcmcia ctrl
+sysfs: no such class: pcmcia_socket
+>> serial.1: read info
+----- /proc/tty/driver/serial -----
+  0: uart:16550A mmio:0x1E000C00 irq:19 tx:182 rx:0 RTS|CTS|DTR|DSR|CD|RI
+  1: uart:unknown port:00000000 irq:0
+  2: uart:unknown port:00000000 irq:0
+  3: uart:unknown port:00000000 irq:0
+  4: uart:unknown port:00000000 irq:0
+  5: uart:unknown port:00000000 irq:0
+  6: uart:unknown port:00000000 irq:0
+  7: uart:unknown port:00000000 irq:0
+  8: uart:unknown port:00000000 irq:0
+  9: uart:unknown port:00000000 irq:0
+  10: uart:unknown port:00000000 irq:0
+  11: uart:unknown port:00000000 irq:0
+  12: uart:unknown port:00000000 irq:0
+  13: uart:unknown port:00000000 irq:0
+  14: uart:unknown port:00000000 irq:0
+  15: uart:unknown port:00000000 irq:0
+----- /proc/tty/driver/serial end -----
+----- serial info -----
+----- serial info end -----
+>> serial.2: build list
+>> misc.5: misc data
+----- misc resources -----
+irq:0  7 (        0) "7  timer"
+irq:0  8 (   175292) "GIC Local   1  timer"
+irq:0  9 (    66436) "GIC  63  IPI call"
+irq:0 10 (    90168) "GIC  64  IPI call"
+irq:0 11 (    98239) "GIC  65  IPI call"
+irq:0 12 (    90657) "GIC  66  IPI call"
+irq:0 13 (     6812) "GIC  67  IPI resched"
+irq:0 14 (     9687) "GIC  68  IPI resched"
+irq:0 15 (    16916) "GIC  69  IPI resched"
+irq:0 16 (    14102) "GIC  70  IPI resched"
+irq:0 17 (        0) "GIC  19  1e000600.gpio-bank0" "1e000600.gpio-bank1" "1e000600.gpio-bank2"
+irq:0 19 (       12) "GIC  33  ttyS0"
+irq:0 21 (     2820) "GIC  10  1e100000.ethernet"
+irq:0 22 (    16396) "GIC  11  mt76x2e"
+irq:0 23 (    37569) "GIC  31  mt7603e"
+irq:0 25 (        8) "GIC  30  mt7530"
+irq:0 26 (        0) "2  mt7530-0:02"
+irq:0 27 (        5) "3  mt7530-0:03"
+irq:0 28 (        3) "4  mt7530-0:04"
+irq:0 29 (        1) "18  keys"
+----- misc resources end -----
+>> parallel.1: pp mod
+----- exec: "/sbin/modprobe parport_pc" -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe lp" -----
+----- return code: ? -----
+>> parallel.2.1: lp read info
+>> parallel.2.2: lp read info
+>> parallel.2.3: lp read info
+----- parallel info -----
+----- parallel info end -----
+>> block.1: block modules
+----- exec: "/sbin/modprobe ide-cd_mod " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe ide-disk " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe sr_mod " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe sd_mod " -----
+----- return code: ? -----
+----- exec: "/sbin/modprobe st " -----
+----- return code: ? -----
+>> block.2: sysfs drivers
+>> block.3: cdrom
+>> block.4: partition
+----- /proc/partitions -----
+    31        0        192 mtdblock0
+    31        1         64 mtdblock1
+    31        2         64 mtdblock2
+    31        3         64 mtdblock3
+    31        4         64 mtdblock4
+    31        5         64 mtdblock5
+    31        6       1024 mtdblock6
+    31        7      14848 mtdblock7
+    31        8       2640 mtdblock8
+    31        9      12207 mtdblock9
+    31       10       8512 mtdblock10
+----- /proc/partitions end -----
+disks:
+  mtdblock0
+  mtdblock1
+  mtdblock2
+  mtdblock3
+  mtdblock4
+  mtdblock5
+  mtdblock6
+  mtdblock7
+  mtdblock8
+  mtdblock9
+  mtdblock10
+partitions:
+>> block.5: get sysfs block dev data
+-----  lsscsi -----
+-----  lsscsi end -----
+  block: name = mtdblock4, path = /class/block/mtdblock4
+    dev = 31:4
+    range = 1
+    block device: bus = mtd, bus_id = mtd4 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd4
+>> block.5: /dev/mtdblock4
+>> block.5.1: /dev/mtdblock4 geo
+  dev = /dev/mtdblock4, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock4: ioctl(block size) ok
+/dev/mtdblock4: ioctl(disk size) ok
+  block: name = mtdblock2, path = /class/block/mtdblock2
+    dev = 31:2
+    range = 1
+    block device: bus = mtd, bus_id = mtd2 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd2
+>> block.5: /dev/mtdblock2
+>> block.5.1: /dev/mtdblock2 geo
+  dev = /dev/mtdblock2, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock2: ioctl(block size) ok
+/dev/mtdblock2: ioctl(disk size) ok
+  block: name = mtdblock0, path = /class/block/mtdblock0
+    dev = 31:0
+    range = 1
+    block device: bus = mtd, bus_id = mtd0 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd0
+>> block.5: /dev/mtdblock0
+>> block.5.1: /dev/mtdblock0 geo
+  dev = /dev/mtdblock0, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock0: ioctl(block size) ok
+/dev/mtdblock0: ioctl(disk size) ok
+  block: name = mtdblock9, path = /class/block/mtdblock9
+    dev = 31:9
+    range = 1
+    block device: bus = mtd, bus_id = mtd9 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd9
+>> block.5: /dev/mtdblock9
+>> block.5.1: /dev/mtdblock9 geo
+  dev = /dev/mtdblock9, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock9: ioctl(block size) ok
+/dev/mtdblock9: ioctl(disk size) ok
+  block: name = mtdblock7, path = /class/block/mtdblock7
+    dev = 31:7
+    range = 1
+    block device: bus = mtd, bus_id = mtd7 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7
+>> block.5: /dev/mtdblock7
+>> block.5.1: /dev/mtdblock7 geo
+  dev = /dev/mtdblock7, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock7: ioctl(block size) ok
+/dev/mtdblock7: ioctl(disk size) ok
+  block: name = mtdblock5, path = /class/block/mtdblock5
+    dev = 31:5
+    range = 1
+    block device: bus = mtd, bus_id = mtd5 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd5
+>> block.5: /dev/mtdblock5
+>> block.5.1: /dev/mtdblock5 geo
+  dev = /dev/mtdblock5, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock5: ioctl(block size) ok
+/dev/mtdblock5: ioctl(disk size) ok
+  block: name = mtdblock3, path = /class/block/mtdblock3
+    dev = 31:3
+    range = 1
+    block device: bus = mtd, bus_id = mtd3 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd3
+>> block.5: /dev/mtdblock3
+>> block.5.1: /dev/mtdblock3 geo
+  dev = /dev/mtdblock3, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock3: ioctl(block size) ok
+/dev/mtdblock3: ioctl(disk size) ok
+  block: name = mtdblock1, path = /class/block/mtdblock1
+    dev = 31:1
+    range = 1
+    block device: bus = mtd, bus_id = mtd1 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd1
+>> block.5: /dev/mtdblock1
+>> block.5.1: /dev/mtdblock1 geo
+  dev = /dev/mtdblock1, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock1: ioctl(block size) ok
+/dev/mtdblock1: ioctl(disk size) ok
+  block: name = mtdblock10, path = /class/block/mtdblock10
+    dev = 31:10
+    range = 1
+    block device: bus = mtd, bus_id = mtd10 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd10
+>> block.5: /dev/mtdblock10
+>> block.5.1: /dev/mtdblock10 geo
+  dev = /dev/mtdblock10, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock10: ioctl(block size) ok
+/dev/mtdblock10: ioctl(disk size) ok
+  block: name = mtdblock8, path = /class/block/mtdblock8
+    dev = 31:8
+    range = 1
+    block device: bus = mtd, bus_id = mtd8 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd8
+>> block.5: /dev/mtdblock8
+>> block.5.1: /dev/mtdblock8 geo
+  dev = /dev/mtdblock8, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock8: ioctl(block size) ok
+/dev/mtdblock8: ioctl(disk size) ok
+  block: name = mtdblock6, path = /class/block/mtdblock6
+    dev = 31:6
+    range = 1
+    block device: bus = mtd, bus_id = mtd6 driver = (null)
+      path = /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd6
+>> block.5: /dev/mtdblock6
+>> block.5.1: /dev/mtdblock6 geo
+  dev = /dev/mtdblock6, fd = 3
+  open ok, fd = 3
+  geo failed: Not a tty
+/dev/mtdblock6: ioctl(block size) ok
+/dev/mtdblock6: ioctl(disk size) ok
+>> scsi.1: scsi modules
+----- exec: "/sbin/modprobe sg " -----
+----- return code: ? -----
+>> scsi.2: scsi tape
+sysfs: no such class: scsi_tape
+>> scsi.3: scsi generic
+sysfs: no such class: scsi_generic
+>> usb.1: sysfs drivers
+>> usb.2: usb
+sysfs: no such bus: usb
+>> usb.3.1: joydev mod
+----- exec: "/sbin/modprobe joydev " -----
+----- return code: ? -----
+>> usb.3.2: evdev mod
+----- exec: "/sbin/modprobe evdev " -----
+----- return code: ? -----
+>> usb.3.3: input
+sysfs: no such class: input
+>> usb.3.4: lp
+sysfs: no such class: usb
+>> usb.3.5: serial
+>> modem.1: serial
+******  started child process 3682 (15s/120s)  ******
+******  stopped child process 3682 (120s)  ******
+>> mouse.2: serial
+******  started child process 3683 (20s/20s)  ******
+******  stopped child process 3683 (20s)  ******
+>> input.1: joydev mod
+----- exec: "/sbin/modprobe joydev " -----
+----- return code: ? -----
+>> input.1.1: evdev mod
+----- exec: "/sbin/modprobe evdev " -----
+----- return code: ? -----
+>> input.2: input
+----- /proc/bus/input/devices -----
+----- /proc/bus/input/devices end -----
+>> kbd.2: uml
+>> cpu.1: cpuinfo
+----- /proc/cpuinfo -----
+  system type		: MediaTek MT7621 ver:1 eco:3
+  machine			: Xiaomi Mi Router 4A Gigabit Edition
+  processor		: 0
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 0
+  VPE			: 0
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 1
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 0
+  VPE			: 1
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 2
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 1
+  VPE			: 0
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+  processor		: 3
+  cpu model		: MIPS 1004Kc V2.15
+  BogoMIPS		: 586.13
+  wait instruction	: yes
+  microsecond timers	: yes
+  tlb_entries		: 32
+  extra interrupt vector	: yes
+  hardware watchpoint	: yes, count: 4, address/irw mask: [0x0ffc, 0x0ffc, 0x0ffb, 0x0ffb]
+  isa			: mips1 mips2 mips32r1 mips32r2
+  ASEs implemented	: mips16 dsp mt
+  Options implemented	: tlb 4kex 4k_cache prefetch mcheck ejtag llsc pindexed_dcache userlocal vint perf_cntr_intr_bit cdmm perf
+  shadow register sets	: 1
+  kscratch registers	: 0
+  package			: 0
+  core			: 1
+  VPE			: 1
+  VCED exceptions		: not available
+  VCEI exceptions		: not available
+  
+----- /proc/cpuinfo end -----
+>> kbd.3: serial console
+>> fb.1: read info
+>> net.1: get network data
+  net interface: name = br-lan, path = /class/net/br-lan
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d4
+  br-lan: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: bridge
+    ethtool    bus: N/A
+    ethtool private flags: 0
+  net interface: name = lan1, path = /class/net/lan1
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d4
+    net device: path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+    net driver: name = mt7530, path = /bus/mdio_bus/drivers/mt7530
+  lan1: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d4
+    ethtool private flags: 0
+  net interface: name = wlan0, path = /class/net/wlan0
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d6
+    net device: path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+    net driver: name = mt7603e, path = /bus/pci/drivers/mt7603e
+  wlan0: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d6
+    ethtool private flags: 0
+  net interface: name = eth0, path = /class/net/eth0
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d4
+    net device: path = /devices/platform/1e100000.ethernet
+    net driver: name = mtk_soc_eth, path = /bus/platform/drivers/mtk_soc_eth
+  eth0: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d4
+    ethtool private flags: 0
+  net interface: name = br-guest, path = /class/net/br-guest
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d6
+  br-guest: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: bridge
+    ethtool    bus: N/A
+    ethtool private flags: 0
+  net interface: name = br-private, path = /class/net/br-private
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d7
+  br-private: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    ethtool driver: bridge
+    ethtool    bus: N/A
+    ethtool private flags: 0
+  net interface: name = lo, path = /class/net/lo
+    type = 772
+    carrier = 1
+    hw_addr = 00:00:00:00:00:00
+  lo: ethtool permanent hw address[6]: 00:00:00:00:00:00
+    GDRVINFO ethtool error: Not supported
+    ethtool private flags: 0
+  net interface: name = lan2, path = /class/net/lan2
+    type = 1
+    carrier = 0
+    hw_addr = 50:d2:f5:0d:54:d4
+    net device: path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+    net driver: name = mt7530, path = /bus/mdio_bus/drivers/mt7530
+  lan2: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d4
+    ethtool private flags: 0
+  net interface: name = wlan1, path = /class/net/wlan1
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d7
+    net device: path = /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+    net driver: name = mt76x2e, path = /bus/pci/drivers/mt76x2e
+  wlan1: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d7
+    ethtool private flags: 0
+  net interface: name = wan, path = /class/net/wan
+    type = 1
+    carrier = 1
+    hw_addr = 50:d2:f5:0d:54:d5
+    net device: path = /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+    net driver: name = mt7530, path = /bus/mdio_bus/drivers/mt7530
+  wan: ethtool permanent hw address[6]: 50:d2:f5:0d:54:d5
+    ethtool private flags: 0
+>> pppoe.1: looking for pppoe
+>> pppoe.2: discovery
+Attempt number 1
+br-lan: Sending PADI packet
+lan1: Sending PADI packet
+eth0: Sending PADI packet
+br-guest: Sending PADI packet
+br-private: Sending PADI packet
+lan2: Sending PADI packet
+wan: Sending PADI packet
+Timeout waiting for PADO packets
+Attempt number 2
+br-lan: Sending PADI packet
+lan1: Sending PADI packet
+eth0: Sending PADI packet
+br-guest: Sending PADI packet
+br-private: Sending PADI packet
+lan2: Sending PADI packet
+wan: Sending PADI packet
+Timeout waiting for PADO packets
+>> wlan.1: detecting wlan features
+*** device wlan0 is wireless ***
+*** device wlan1 is wireless ***
+>> isdn.1: list
+>> dsl.1: list
+>> int.2: cdrom
+>> int.3: media
+>> int.4.1: /dev/mtdblock4
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.2: /dev/mtdblock2
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.3: /dev/mtdblock0
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.4: /dev/mtdblock9
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.5: /dev/mtdblock7
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.6: /dev/mtdblock5
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.7: /dev/mtdblock3
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.8: /dev/mtdblock1
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.9: /dev/mtdblock10
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.10: /dev/mtdblock8
+  read_block0: 512 bytes (5s, 0us)
+>> int.4.11: /dev/mtdblock6
+  read_block0: 512 bytes (5s, 0us)
+>> int.4: floppy
+>> int.6: mouse
+>> int.7: hdb
+>> int.7.1: modules
+>> int.8: usbscsi
+>> int.9: hotplug
+>> int.10: modem
+>> int.11: wlan
+>> int.12: udev
+-----  udevinfo -----
+-----  udevinfo end -----
+>> int.13: device names
+>> int.16: parent
+  prop read: rdCR.n_7QNeEnh23 (failed)
+  old prop read: rdCR.n_7QNeEnh23 (failed)
+  prop read: rdCR.CxwsZFjVASF (failed)
+  old prop read: rdCR.CxwsZFjVASF (failed)
+  prop read: qLht.XT16lX234E9 (failed)
+  old prop read: qLht.XT16lX234E9 (failed)
+  prop read: vSkL.XT16lX234E9 (failed)
+  old prop read: vSkL.XT16lX234E9 (failed)
+  prop read: y9sn.8HC4BmFsC5B (failed)
+  old prop read: y9sn.8HC4BmFsC5B (failed)
+  prop read: PL6s.6IjBNMNEUE6 (failed)
+  old prop read: PL6s.6IjBNMNEUE6 (failed)
+  prop read: cGoV.TfPFe67fIBB (failed)
+  old prop read: cGoV.TfPFe67fIBB (failed)
+  prop read: F7Yh.TfPFe67fIBB (failed)
+  old prop read: F7Yh.TfPFe67fIBB (failed)
+  prop read: ISnY.TfPFe67fIBB (failed)
+  old prop read: ISnY.TfPFe67fIBB (failed)
+  prop read: S7lj.TfPFe67fIBB (failed)
+  old prop read: S7lj.TfPFe67fIBB (failed)
+  prop read: ISnY.TfPFe67fIBB (failed)
+  old prop read: ISnY.TfPFe67fIBB (failed)
+  prop read: ISnY.TfPFe67fIBB (failed)
+  old prop read: ISnY.TfPFe67fIBB (failed)
+  prop read: ISnY.zpNUCgvBch2 (failed)
+  old prop read: ISnY.zpNUCgvBch2 (failed)
+  prop read: ISnY.zpNUCgvBch2 (failed)
+  old prop read: ISnY.zpNUCgvBch2 (failed)
+  prop read: ISnY.zpNUCgvBch2 (failed)
+  old prop read: ISnY.zpNUCgvBch2 (failed)
+  prop read: M4HQ.Fxp0d3BezAE (failed)
+  old prop read: M4HQ.Fxp0d3BezAE (failed)
+  prop read: SjmH.Fxp0d3BezAE (failed)
+  old prop read: SjmH.Fxp0d3BezAE (failed)
+  prop read: YMG9.Fxp0d3BezAE (failed)
+  old prop read: YMG9.Fxp0d3BezAE (failed)
+  prop read: tETA.Fxp0d3BezAE (failed)
+  old prop read: tETA.Fxp0d3BezAE (failed)
+  prop read: yty1.Fxp0d3BezAE (failed)
+  old prop read: yty1.Fxp0d3BezAE (failed)
+  prop read: pFXU.Fxp0d3BezAE (failed)
+  old prop read: pFXU.Fxp0d3BezAE (failed)
+  prop read: vu0M.Fxp0d3BezAE (failed)
+  old prop read: vu0M.Fxp0d3BezAE (failed)
+  prop read: +XWD.Fxp0d3BezAE (failed)
+  old prop read: +XWD.Fxp0d3BezAE (failed)
+  prop read: nM3n.Fxp0d3BezAE (failed)
+  old prop read: nM3n.Fxp0d3BezAE (failed)
+  prop read: Q3D6.Fxp0d3BezAE (failed)
+  old prop read: Q3D6.Fxp0d3BezAE (failed)
+  prop read: GRnY.Fxp0d3BezAE (failed)
+  old prop read: GRnY.Fxp0d3BezAE (failed)
+  prop read: Fyby.5lXXuQkv_C5 (failed)
+  old prop read: Fyby.5lXXuQkv_C5 (failed)
+  prop read: gKtr.ndpeucax6V1 (failed)
+  old prop read: gKtr.ndpeucax6V1 (failed)
+  prop read: Bbnk.ndpeucax6V1 (failed)
+  old prop read: Bbnk.ndpeucax6V1 (failed)
+  prop read: AYEt.QXn1l67RSa1 (failed)
+  old prop read: AYEt.QXn1l67RSa1 (failed)
+  prop read: usDW.ndpeucax6V1 (failed)
+  old prop read: usDW.ndpeucax6V1 (failed)
+  prop read: 1gpn.ndpeucax6V1 (failed)
+  old prop read: 1gpn.ndpeucax6V1 (failed)
+  prop read: Rwl1.ndpeucax6V1 (failed)
+  old prop read: Rwl1.ndpeucax6V1 (failed)
+  prop read: ZsBS.GQNx7L4uPNA (failed)
+  old prop read: ZsBS.GQNx7L4uPNA (failed)
+  prop read: em1p.ndpeucax6V1 (failed)
+  old prop read: em1p.ndpeucax6V1 (failed)
+  prop read: djUx.QXn1l67RSa1 (failed)
+  old prop read: djUx.QXn1l67RSa1 (failed)
+  prop read: kW4D.ndpeucax6V1 (failed)
+  old prop read: kW4D.ndpeucax6V1 (failed)
+----- kernel log -----
+  <6>[    1.592221] pci 0000:00:01.0: BAR 8: assigned [mem 0x60200000-0x602fffff]
+  <6>[    1.599010] pci 0000:00:01.0: BAR 9: assigned [mem 0x60300000-0x603fffff pref]
+  <6>[    1.606232] pci 0000:00:00.0: BAR 1: assigned [mem 0x60400000-0x6040ffff]
+  <6>[    1.612998] pci 0000:00:01.0: BAR 1: assigned [mem 0x60410000-0x6041ffff]
+  <6>[    1.619788] pci 0000:00:00.0: BAR 7: assigned [io  0x1e160000-0x1e160fff]
+  <6>[    1.626574] pci 0000:00:01.0: BAR 7: assigned [io  0x1e161000-0x1e161fff]
+  <6>[    1.633344] pci 0000:01:00.0: BAR 0: assigned [mem 0x60000000-0x600fffff 64bit]
+  <6>[    1.640670] pci 0000:01:00.0: BAR 6: assigned [mem 0x60100000-0x6010ffff pref]
+  <6>[    1.647886] pci 0000:00:00.0: PCI bridge to [bus 01]
+  <6>[    1.652831] pci 0000:00:00.0:   bridge window [io  0x1e160000-0x1e160fff]
+  <6>[    1.659616] pci 0000:00:00.0:   bridge window [mem 0x60000000-0x600fffff]
+  <6>[    1.666399] pci 0000:00:00.0:   bridge window [mem 0x60100000-0x601fffff pref]
+  <6>[    1.673598] pci 0000:02:00.0: BAR 0: assigned [mem 0x60200000-0x602fffff]
+  <6>[    1.680386] pci 0000:00:01.0: PCI bridge to [bus 02]
+  <6>[    1.685354] pci 0000:00:01.0:   bridge window [io  0x1e161000-0x1e161fff]
+  <6>[    1.692113] pci 0000:00:01.0:   bridge window [mem 0x60200000-0x602fffff]
+  <6>[    1.698912] pci 0000:00:01.0:   bridge window [mem 0x60300000-0x603fffff pref]
+  <6>[    1.712468] mt7530 mdio-bus:1f: Link is Up - 1Gbps/Full - flow control rx/tx
+  <6>[    1.720623] VFS: Mounted root (squashfs filesystem) readonly on device 31:9.
+  <6>[    1.731768] Freeing unused kernel memory: 1252K
+  <4>[    1.736340] This architecture does not have kernel memory protection.
+  <6>[    1.742770] Run /sbin/init as init process
+  <7>[    1.746860]   with arguments:
+  <7>[    1.746867]     /sbin/init
+  <7>[    1.746872]   with environment:
+  <7>[    1.746877]     HOME=/
+  <7>[    1.746882]     TERM=linux
+  <14>[    2.299580] init: Console is alive
+  <14>[    2.303328] init: - watchdog -
+  <14>[    2.994241] kmodloader: loading kernel modules from /etc/modules-boot.d/*
+  <14>[    3.114063] kmodloader: done loading kernel modules from /etc/modules-boot.d/*
+  <14>[    3.134735] init: - preinit -
+  <5>[    3.975356] random: jshn: uninitialized urandom read (4 bytes read)
+  <5>[    4.127651] random: jshn: uninitialized urandom read (4 bytes read)
+  <5>[    4.164828] random: jshn: uninitialized urandom read (4 bytes read)
+  <6>[    4.406126] mtk_soc_eth 1e100000.ethernet eth0: configuring for fixed/rgmii link mode
+  <6>[    4.415099] mtk_soc_eth 1e100000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+  <6>[    4.423622] mt7530 mdio-bus:1f lan1: configuring for phy/gmii link mode
+  <6>[    4.430578] 8021q: adding VLAN 0 to HW filter on device lan1
+  <6>[    4.439372] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+  <6>[    6.023026] mt7530 mdio-bus:1f lan1: Link is Up - 100Mbps/Full - flow control off
+  <6>[    6.030581] IPv6: ADDRCONF(NETDEV_CHANGE): lan1: link becomes ready
+  <5>[    8.773296] jffs2: notice: (566) jffs2_build_xattr_subsystem: complete building xattr subsystem, 23 of xdatum (22 unchecked, 1 orphan) and 31 of xref (1 dead, 0 orphan) found.
+  <14>[    8.791836] mount_root: switching to jffs2 overlay
+  <4>[    8.978125] overlayfs: upper fs does not support tmpfile.
+  <12>[    9.105837] urandom-seed: Seeding with /etc/urandom.seed
+  <6>[    9.293537] mt7530 mdio-bus:1f lan1: Link is Down
+  <14>[    9.316004] procd: - early -
+  <14>[    9.319122] procd: - watchdog -
+  <5>[    9.374403] random: crng init done
+  <5>[    9.377848] random: 7 urandom warning(s) missed due to ratelimiting
+  <14>[    9.974477] procd: - watchdog -
+  <14>[    9.979111] procd: - ubus -
+  <14>[   10.074489] procd: - init -
+  <14>[   10.823990] kmodloader: loading kernel modules from /etc/modules.d/*
+  <14>[   11.051269] urngd: v1.0.2 started.
+  <6>[   11.165238] fuse: init (API version 7.32)
+  <6>[   11.175259] Loading modules backported from Linux version v5.15.92-0-ge515b9902f5f
+  <6>[   11.182820] Backport generated by backports.git v5.15.92-1-0-gdfe0f60c
+  <6>[   11.421023] mt7621-pci 1e140000.pcie: bus=2 slot=1 irq=23
+  <6>[   11.426519] pci 0000:00:01.0: enabling device (0006 -> 0007)
+  <6>[   11.432171] mt7603e 0000:02:00.0: enabling device (0000 -> 0002)
+  <6>[   11.438339] mt7603e 0000:02:00.0: ASIC revision: 76030010
+  <6>[   12.475685] mt7603e 0000:02:00.0: Firmware Version: ap_pcie
+  <6>[   12.481262] mt7603e 0000:02:00.0: Build Time: 20160107100755
+  <6>[   12.524323] mt7603e 0000:02:00.0: firmware init done
+  <7>[   12.697056] ieee80211 phy0: Selected rate control algorithm 'minstrel_ht'
+  <6>[   12.708612] mt7621-pci 1e140000.pcie: bus=1 slot=0 irq=22
+  <6>[   12.714052] pci 0000:00:00.0: enabling device (0006 -> 0007)
+  <6>[   12.719738] mt76x2e 0000:01:00.0: enabling device (0000 -> 0002)
+  <6>[   12.725941] mt76x2e 0000:01:00.0: ASIC revision: 76120044
+  <6>[   13.536047] mt76x2e 0000:01:00.0: ROM patch build: 20141115060606a
+  <6>[   13.548181] mt76x2e 0000:01:00.0: Firmware Version: 0.0.00
+  <6>[   13.553675] mt76x2e 0000:01:00.0: Build: 1
+  <6>[   13.557819] mt76x2e 0000:01:00.0: Build Time: 201607111443____
+  <6>[   13.584407] mt76x2e 0000:01:00.0: Firmware running!
+  <7>[   13.591277] ieee80211 phy1: Selected rate control algorithm 'minstrel_ht'
+  <6>[   13.655584] PPP generic driver version 2.4.2
+  <6>[   13.661696] NET: Registered protocol family 24
+  <14>[   13.674904] kmodloader: done loading kernel modules from /etc/modules.d/*
+  <6>[   22.630520] mtk_soc_eth 1e100000.ethernet eth0: Link is Down
+  <6>[   22.651299] mtk_soc_eth 1e100000.ethernet eth0: configuring for fixed/rgmii link mode
+  <6>[   22.659828] mtk_soc_eth 1e100000.ethernet eth0: Link is Up - 1Gbps/Full - flow control rx/tx
+  <6>[   22.663596] mt7530 mdio-bus:1f lan1: configuring for phy/gmii link mode
+  <6>[   22.675562] 8021q: adding VLAN 0 to HW filter on device lan1
+  <6>[   22.684145] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+  <6>[   22.691601] br-lan: port 1(lan1) entered blocking state
+  <6>[   22.697160] br-lan: port 1(lan1) entered disabled state
+  <6>[   22.703670] device lan1 entered promiscuous mode
+  <6>[   22.708617] device eth0 entered promiscuous mode
+  <6>[   22.732953] mt7530 mdio-bus:1f lan2: configuring for phy/gmii link mode
+  <6>[   22.740218] 8021q: adding VLAN 0 to HW filter on device lan2
+  <6>[   22.749517] br-lan: port 2(lan2) entered blocking state
+  <6>[   22.755204] br-lan: port 2(lan2) entered disabled state
+  <6>[   22.761621] device lan2 entered promiscuous mode
+  <6>[   22.846628] mt7530 mdio-bus:1f wan: configuring for phy/gmii link mode
+  <6>[   22.854163] 8021q: adding VLAN 0 to HW filter on device wan
+  <6>[   24.328376] br-guest: port 1(wlan0) entered blocking state
+  <6>[   24.333916] br-guest: port 1(wlan0) entered disabled state
+  <6>[   24.340205] device wlan0 entered promiscuous mode
+  <6>[   24.345635] br-guest: port 1(wlan0) entered blocking state
+  <6>[   24.351191] br-guest: port 1(wlan0) entered forwarding state
+  <6>[   24.357782] IPv6: ADDRCONF(NETDEV_CHANGE): br-guest: link becomes ready
+  <6>[   24.380256] IPv6: ADDRCONF(NETDEV_CHANGE): wlan0: link becomes ready
+  <6>[   24.392986] mt7530 mdio-bus:1f lan1: Link is Up - 100Mbps/Full - flow control off
+  <6>[   24.403603] br-lan: port 1(lan1) entered blocking state
+  <6>[   24.409011] br-lan: port 1(lan1) entered forwarding state
+  <6>[   24.417994] IPv6: ADDRCONF(NETDEV_CHANGE): br-lan: link becomes ready
+  <6>[   24.991370] br-private: port 1(wlan1) entered blocking state
+  <6>[   24.997144] br-private: port 1(wlan1) entered disabled state
+  <6>[   25.003501] device wlan1 entered promiscuous mode
+  <6>[   25.008975] br-private: port 1(wlan1) entered blocking state
+  <6>[   25.014812] br-private: port 1(wlan1) entered forwarding state
+  <6>[   25.023454] br-private: port 1(wlan1) entered disabled state
+  <6>[   26.742543] mt7530 mdio-bus:1f wan: Link is Up - 1Gbps/Full - flow control rx/tx
+  <6>[   26.750132] IPv6: ADDRCONF(NETDEV_CHANGE): wan: link becomes ready
+  <6>[   30.870618] IPv6: ADDRCONF(NETDEV_CHANGE): wlan1: link becomes ready
+  <6>[   30.877520] br-private: port 1(wlan1) entered blocking state
+  <6>[   30.883254] br-private: port 1(wlan1) entered forwarding state
+  <6>[   30.892262] IPv6: ADDRCONF(NETDEV_CHANGE): br-private: link becomes ready
+----- kernel log end -----
+----- /proc/modules -----
+  pppoe 9664 0 - Live 0x00000000
+  ppp_async 7248 0 - Live 0x00000000
+  nft_fib_inet 672 0 - Live 0x00000000
+  nf_flow_table_ipv6 448 0 - Live 0x00000000
+  nf_flow_table_ipv4 448 0 - Live 0x00000000
+  nf_flow_table_inet 576 0 - Live 0x00000000
+  pppox 1296 1 pppoe, Live 0x00000000
+  ppp_generic 25456 3 pppoe,ppp_async,pppox, Live 0x00000000
+  nft_reject_ipv6 672 0 - Live 0x00000000
+  nft_reject_ipv4 672 0 - Live 0x00000000
+  nft_reject_inet 1152 2 - Live 0x00000000
+  nft_reject 1152 3 nft_reject_ipv6,nft_reject_ipv4,nft_reject_inet, Live 0x00000000
+  nft_redir 1792 0 - Live 0x00000000
+  nft_quota 2016 0 - Live 0x00000000
+  nft_objref 1664 0 - Live 0x00000000
+  nft_numgen 1504 0 - Live 0x00000000
+  nft_nat 2592 24 - Live 0x00000000
+  nft_masq 1824 4 - Live 0x00000000
+  nft_log 1728 0 - Live 0x00000000
+  nft_limit 3552 5 - Live 0x00000000
+  nft_hash 2432 0 - Live 0x00000000
+  nft_flow_offload 3488 0 - Live 0x00000000
+  nft_fib_ipv6 2784 1 nft_fib_inet, Live 0x00000000
+  nft_fib_ipv4 2112 1 nft_fib_inet, Live 0x00000000
+  nft_fib 1408 3 nft_fib_inet,nft_fib_ipv6,nft_fib_ipv4, Live 0x00000000
+  nft_ct 8064 9 - Live 0x00000000
+  nft_counter 2144 28 - Live 0x00000000
+  nft_chain_nat 864 2 - Live 0x00000000
+  nf_tables 153184 532 nft_fib_inet,nf_flow_table_ipv6,nf_flow_table_ipv4,nf_flow_table_inet,nft_reject_ipv6,nft_reject_ipv4,nft_reject_inet,nft_reject,nft_redir,nft_quota,nft_objref,nft_numgen,nft_nat,nft_masq,nft_log,nft_limit,nft_hash,nft_flow_offload,nft_fib_ipv6,nft_fib_ipv4,nft_fib,nft_ct,nft_counter,nft_chain_nat, Live 0x00000000
+  nf_nat 26544 4 nft_redir,nft_nat,nft_masq,nft_chain_nat, Live 0x00000000
+  nf_flow_table 22480 4 nf_flow_table_ipv6,nf_flow_table_ipv4,nf_flow_table_inet,nft_flow_offload, Live 0x00000000
+  nf_conntrack 76592 7 nft_redir,nft_nat,nft_masq,nft_flow_offload,nft_ct,nf_nat,nf_flow_table, Live 0x00000000
+  mt76x2e 10208 0 - Live 0x00000000
+  mt76x2_common 11744 1 mt76x2e, Live 0x00000000
+  mt76x02_lib 40640 2 mt76x2e,mt76x2_common, Live 0x00000000
+  mt7603e 38560 0 - Live 0x00000000
+  mt76 45120 4 mt76x2e,mt76x2_common,mt76x02_lib,mt7603e, Live 0x00000000
+  mac80211 529504 4 mt76x2e,mt76x02_lib,mt7603e,mt76, Live 0x00000000
+  cfg80211 286784 5 mt76x2_common,mt76x02_lib,mt7603e,mt76,mac80211, Live 0x00000000
+  slhc 5312 1 ppp_generic, Live 0x00000000
+  nfnetlink 5392 1 nf_tables, Live 0x00000000
+  nf_reject_ipv6 2944 2 nft_reject_ipv6,nft_reject_inet, Live 0x00000000
+  nf_reject_ipv4 2528 2 nft_reject_ipv4,nft_reject_inet, Live 0x00000000
+  nf_log_ipv6 3968 0 - Live 0x00000000
+  nf_log_ipv4 3680 0 - Live 0x00000000
+  nf_log_common 3008 2 nf_log_ipv6,nf_log_ipv4, Live 0x00000000
+  nf_defrag_ipv6 5872 1 nf_conntrack, Live 0x00000000
+  nf_defrag_ipv4 1216 1 nf_conntrack, Live 0x00000000
+  libcrc32c 592 1 nf_tables, Live 0x00000000
+  crc_ccitt 1664 1 ppp_async, Live 0x00000000
+  compat 1120 2 mac80211,cfg80211, Live 0x00000000
+  fuse 95776 0 - Live 0x00000000
+  sha256_generic 2400 0 - Live 0x00000000
+  libsha256 8576 1 sha256_generic, Live 0x00000000
+  seqiv 1632 0 - Live 0x00000000
+  jitterentropy_rng 7136 0 - Live 0x00000000
+  drbg 17536 0 - Live 0x00000000
+  hmac 2496 0 - Live 0x00000000
+  cmac 2464 0 - Live 0x00000000
+  leds_gpio 3168 0 - Live 0x00000000
+  gpio_button_hotplug 6592 0 - Live 0x00000000
+  crc32c_generic 1376 1 - Live 0x00000000
+----- /proc/modules end -----
+  used irqs: 7,8,9,10,11,12,13,14,15,16,17,19,21,22,23,25,26,27,28,29,63
+=========== end debug info ============
+01: None 00.0: 10107 System
+  [Created at sys.64]
+  Unique ID: rdCR.n_7QNeEnh23
+  Hardware Class: system
+  Model: "System"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+02: None 00.0: 10102 Main Memory
+  [Created at memory.74]
+  Unique ID: rdCR.CxwsZFjVASF
+  Hardware Class: memory
+  Model: "Main Memory"
+  Memory Range: 0x00000000-0x075e4fff (rw)
+  Memory Size: 120 MB
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+03: PCI 00.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.386]
+  Unique ID: qLht.XT16lX234E9
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0
+  SysFS BusID: 0000:00:00.0
+  Hardware Class: bridge
+  Model: "PCI bridge"
+  Vendor: pci 0x0e8d 
+  Device: pci 0x0801 
+  Revision: 0x01
+  Memory Range: 0x60400000-0x6040ffff (rw,non-prefetchable)
+  IRQ: 255 (no events)
+  Module Alias: "pci:v00000E8Dd00000801sv00000000sd00000000bc06sc04i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+04: PCI 01.0: 0604 PCI bridge (Normal decode)
+  [Created at pci.386]
+  Unique ID: vSkL.XT16lX234E9
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0
+  SysFS BusID: 0000:00:01.0
+  Hardware Class: bridge
+  Model: "PCI bridge"
+  Vendor: pci 0x0e8d 
+  Device: pci 0x0801 
+  Revision: 0x01
+  Memory Range: 0x60410000-0x6041ffff (rw,non-prefetchable)
+  IRQ: 255 (no events)
+  Module Alias: "pci:v00000E8Dd00000801sv00000000sd00000000bc06sc04i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+05: PCI 200.0: 0282 WLAN controller
+  [Created at pci.386]
+  Unique ID: y9sn.8HC4BmFsC5B
+  Parent ID: vSkL.XT16lX234E9
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+  SysFS BusID: 0000:02:00.0
+  Hardware Class: network
+  Model: "MEDIATEK WLAN controller"
+  Vendor: pci 0x14c3 "MEDIATEK Corp."
+  Device: pci 0x7603 
+  SubVendor: pci 0x14c3 "MEDIATEK Corp."
+  SubDevice: pci 0x7603 
+  Driver: "mt7603e"
+  Driver Modules: "mt7603e"
+  Device File: wlan0
+  Features: WLAN
+  Memory Range: 0x60200000-0x602fffff (rw,non-prefetchable)
+  IRQ: 23 (37569 events)
+  HW Address: 50:d2:f5:0d:54:d6
+  Permanent HW Address: 50:d2:f5:0d:54:d6
+  Link detected: yes
+  WLAN channels: 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+  WLAN frequencies: 2.412 2.417 2.422 2.427 2.432 2.437 2.442 2.447 2.452 2.457 2.462 2.467 2.472 2.484
+  WLAN encryption modes: WEP40 WEP104 TKIP CCMP
+  WLAN authentication modes: open sharedkey wpa-psk wpa-eap
+  Module Alias: "pci:v000014C3d00007603sv000014C3sd00007603bc02sc80i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #4 (PCI bridge)
+
+06: PCI 100.0: 0282 WLAN controller
+  [Created at pci.386]
+  Unique ID: PL6s.6IjBNMNEUE6
+  Parent ID: qLht.XT16lX234E9
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+  SysFS BusID: 0000:01:00.0
+  Hardware Class: network
+  Model: "MEDIATEK MT7662E 802.11ac PCI Express Wireless Network Adapter"
+  Vendor: pci 0x14c3 "MEDIATEK Corp."
+  Device: pci 0x7662 "MT7662E 802.11ac PCI Express Wireless Network Adapter"
+  SubVendor: pci 0x14c3 "MEDIATEK Corp."
+  SubDevice: pci 0x7662 
+  Driver: "mt76x2e"
+  Driver Modules: "mt76x2e"
+  Device File: wlan1
+  Features: WLAN
+  Memory Range: 0x60000000-0x600fffff (rw,non-prefetchable)
+  Memory Range: 0x60100000-0x6010ffff (ro,non-prefetchable,disabled)
+  IRQ: 22 (16396 events)
+  HW Address: 50:d2:f5:0d:54:d7
+  Permanent HW Address: 50:d2:f5:0d:54:d7
+  Link detected: yes
+  WLAN channels: 36 40 44 48 52 56 60 64 100 104 108 112 116 120 124 128 132 136 140 144 149 153 157 161 165
+  WLAN frequencies: 5.18 5.2 5.22 5.24 5.26 5.28 5.3 5.32 5.5 5.52 5.54 5.56 5.58 5.6 5.62 5.64 5.66 5.68 5.7 5.72 5.745 5.765 5.785 5.805 5.825
+  WLAN encryption modes: WEP40 WEP104 TKIP CCMP
+  WLAN authentication modes: open sharedkey wpa-psk wpa-eap
+  Module Alias: "pci:v000014C3d00007662sv000014C3sd00007662bc02sc80i00"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #3 (PCI bridge)
+
+07: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: cGoV.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+  SysFS BusID: 0000:02:00.0
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mt7603e"
+  Driver Modules: "mt7603e"
+  Module Alias: "of:NpcieTpciCmediatek,mt7621-pci"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+08: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: F7Yh.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+  SysFS BusID: 0000:01:00.0
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mt76x2e"
+  Driver Modules: "mt76x2e"
+  Module Alias: "of:NpcieTpciCmediatek,mt7621-pci"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+09: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: ISnY.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mt7530"
+  Device File: lan1
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: yes
+  Module Alias: "of:NethernetT(null)Cmediatek,mt7621-eth"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+10: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: S7lj.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e100000.ethernet
+  SysFS BusID: 1e100000.ethernet
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mtk_soc_eth"
+  Device File: eth0
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: yes
+  Module Alias: "of:NethernetT(null)Cmediatek,mt7621-eth"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+11: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: ISnY.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mt7530"
+  Device File: lan2
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: no
+  Module Alias: "of:NethernetT(null)Cmediatek,mt7621-eth"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+12: None 00.0: 0200 Ethernet controller
+  [Created at pci.1030]
+  Unique ID: ISnY.TfPFe67fIBB
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "ARM Ethernet controller"
+  Device: "ARM Ethernet controller"
+  Driver: "mt7530"
+  Device File: wan
+  HW Address: 50:d2:f5:0d:54:d5
+  Permanent HW Address: 50:d2:f5:0d:54:d5
+  Link detected: yes
+  Module Alias: "of:NethernetT(null)Cmediatek,mt7621-eth"
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+13: None 00.0: 0200 Ethernet controller
+  [Created at pci.2213]
+  Unique ID: ISnY.zpNUCgvBch2
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "Ethernet controller"
+  Device: "Ethernet controller"
+  Driver: "mt7530"
+  Device File: lan1
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+14: None 00.0: 0200 Ethernet controller
+  [Created at pci.2213]
+  Unique ID: ISnY.zpNUCgvBch2
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "Ethernet controller"
+  Device: "Ethernet controller"
+  Driver: "mt7530"
+  Device File: lan2
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+15: None 00.0: 0200 Ethernet controller
+  [Created at pci.2213]
+  Unique ID: ISnY.zpNUCgvBch2
+  SysFS ID: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  SysFS BusID: mdio-bus:1f
+  Hardware Class: network
+  Model: "Ethernet controller"
+  Device: "Ethernet controller"
+  Driver: "mt7530"
+  Device File: wan
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+16: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: M4HQ.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock4
+  SysFS BusID: mtd4
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd4
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock4
+  Device Number: block 31:4
+  Size: 128 sectors a 512 bytes
+  Capacity: 0 GB (65536 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+17: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: SjmH.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock2
+  SysFS BusID: mtd2
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd2
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock2
+  Device Number: block 31:2
+  Size: 128 sectors a 512 bytes
+  Capacity: 0 GB (65536 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+18: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: YMG9.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock0
+  SysFS BusID: mtd0
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd0
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock0
+  Device Number: block 31:0
+  Size: 384 sectors a 512 bytes
+  Capacity: 0 GB (196608 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+19: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: tETA.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock9
+  SysFS BusID: mtd9
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd9
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock9
+  Device Number: block 31:9
+  Size: 24414 sectors a 512 bytes
+  Capacity: 0 GB (12499968 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+20: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: yty1.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock7
+  SysFS BusID: mtd7
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock7
+  Device Number: block 31:7
+  Size: 29696 sectors a 512 bytes
+  Capacity: 0 GB (15204352 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+21: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: pFXU.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock5
+  SysFS BusID: mtd5
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd5
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock5
+  Device Number: block 31:5
+  Size: 128 sectors a 512 bytes
+  Capacity: 0 GB (65536 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+22: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: vu0M.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock3
+  SysFS BusID: mtd3
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd3
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock3
+  Device Number: block 31:3
+  Size: 128 sectors a 512 bytes
+  Capacity: 0 GB (65536 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+23: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: +XWD.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock1
+  SysFS BusID: mtd1
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd1
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock1
+  Device Number: block 31:1
+  Size: 128 sectors a 512 bytes
+  Capacity: 0 GB (65536 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+24: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: nM3n.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock10
+  SysFS BusID: mtd10
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd10
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock10
+  Device Number: block 31:10
+  Size: 17024 sectors a 512 bytes
+  Capacity: 0 GB (8716288 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+25: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: Q3D6.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock8
+  SysFS BusID: mtd8
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd7/mtd8
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock8
+  Device Number: block 31:8
+  Size: 5281 sectors a 512 bytes
+  Capacity: 0 GB (2703872 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+26: None 00.0: 10600 Disk
+  [Created at block.245]
+  Unique ID: GRnY.Fxp0d3BezAE
+  SysFS ID: /class/block/mtdblock6
+  SysFS BusID: mtd6
+  SysFS Device Link: /devices/platform/1e000000.palmbus/1e000b00.spi/spi_master/spi0/spi0.0/mtd/mtd6
+  Hardware Class: disk
+  Model: "Disk"
+  Driver: "spi-nor"
+  Device File: /dev/mtdblock6
+  Device Number: block 31:6
+  Size: 2048 sectors a 512 bytes
+  Capacity: 0 GB (1048576 bytes)
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+27: Serial 00.0: 10801 Console
+  [Created at kbd.165]
+  Unique ID: Fyby.5lXXuQkv_C5
+  Hardware Class: keyboard
+  Model: "serial console"
+  Device: "serial console"
+  Device File: /dev/ttyS0
+  Speed: 115.2 kbps
+  Config: 8 bits, parity n
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+28: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: gKtr.ndpeucax6V1
+  SysFS ID: /class/net/br-lan
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bridge"
+  Device File: br-lan
+  HW Address: 50:d2:f5:0d:54:d4
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+29: None 01.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: Bbnk.ndpeucax6V1
+  Parent ID: ISnY.TfPFe67fIBB
+  SysFS ID: /class/net/lan1
+  SysFS Device Link: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "mt7530"
+  Device File: lan1
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #9 (Ethernet controller)
+
+30: None 00.0: 1070a WLAN
+  [Created at net.126]
+  Unique ID: AYEt.QXn1l67RSa1
+  Parent ID: y9sn.8HC4BmFsC5B
+  SysFS ID: /class/net/wlan0
+  SysFS Device Link: /devices/platform/1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0
+  Hardware Class: network interface
+  Model: "WLAN network interface"
+  Driver: "mt7603e"
+  Driver Modules: "mt7603e"
+  Device File: wlan0
+  HW Address: 50:d2:f5:0d:54:d6
+  Permanent HW Address: 50:d2:f5:0d:54:d6
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #5 (WLAN controller)
+
+31: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: usDW.ndpeucax6V1
+  Parent ID: S7lj.TfPFe67fIBB
+  SysFS ID: /class/net/eth0
+  SysFS Device Link: /devices/platform/1e100000.ethernet
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "mtk_soc_eth"
+  Device File: eth0
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #10 (Ethernet controller)
+
+32: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: 1gpn.ndpeucax6V1
+  SysFS ID: /class/net/br-guest
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bridge"
+  Device File: br-guest
+  HW Address: 50:d2:f5:0d:54:d6
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+33: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: Rwl1.ndpeucax6V1
+  SysFS ID: /class/net/br-private
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "bridge"
+  Device File: br-private
+  HW Address: 50:d2:f5:0d:54:d7
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+34: None 00.0: 10700 Loopback
+  [Created at net.126]
+  Unique ID: ZsBS.GQNx7L4uPNA
+  SysFS ID: /class/net/lo
+  Hardware Class: network interface
+  Model: "Loopback network interface"
+  Device File: lo
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+
+35: None 02.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: em1p.ndpeucax6V1
+  Parent ID: ISnY.TfPFe67fIBB
+  SysFS ID: /class/net/lan2
+  SysFS Device Link: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "mt7530"
+  Device File: lan2
+  HW Address: 50:d2:f5:0d:54:d4
+  Permanent HW Address: 50:d2:f5:0d:54:d4
+  Link detected: no
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #11 (Ethernet controller)
+
+36: None 01.0: 1070a WLAN
+  [Created at net.126]
+  Unique ID: djUx.QXn1l67RSa1
+  Parent ID: PL6s.6IjBNMNEUE6
+  SysFS ID: /class/net/wlan1
+  SysFS Device Link: /devices/platform/1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0
+  Hardware Class: network interface
+  Model: "WLAN network interface"
+  Driver: "mt76x2e"
+  Driver Modules: "mt76x2e"
+  Device File: wlan1
+  HW Address: 50:d2:f5:0d:54:d7
+  Permanent HW Address: 50:d2:f5:0d:54:d7
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #6 (WLAN controller)
+
+37: None 00.0: 10701 Ethernet
+  [Created at net.126]
+  Unique ID: kW4D.ndpeucax6V1
+  Parent ID: ISnY.TfPFe67fIBB
+  SysFS ID: /class/net/wan
+  SysFS Device Link: /devices/platform/1e100000.ethernet/mdio_bus/mdio-bus/mdio-bus:1f
+  Hardware Class: network interface
+  Model: "Ethernet network interface"
+  Driver: "mt7530"
+  Device File: wan
+  HW Address: 50:d2:f5:0d:54:d5
+  Permanent HW Address: 50:d2:f5:0d:54:d5
+  Link detected: yes
+  Config Status: cfg=new, avail=yes, need=no, active=unknown
+  Attached to: #12 (Ethernet controller)

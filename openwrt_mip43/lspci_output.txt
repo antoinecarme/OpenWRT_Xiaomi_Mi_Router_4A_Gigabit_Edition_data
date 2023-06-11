@@ -1,0 +1,4 @@
+00:00.0 PCI bridge: Device 0e8d:0801 (rev 01)
+00:01.0 PCI bridge: Device 0e8d:0801 (rev 01)
+01:00.0 Network controller: MEDIATEK Corp. MT7662E 802.11ac PCI Express Wireless Network Adapter
+02:00.0 Network controller: MEDIATEK Corp. Device 7603

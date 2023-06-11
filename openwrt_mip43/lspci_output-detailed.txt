@@ -1,0 +1,56 @@
+00:00.0 PCI bridge: Device 0e8d:0801 (rev 01) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pcie@1e140000/pcie@0,0
+	Flags: bus master, fast devsel, latency 0, IRQ 255
+	Memory at 60400000 (32-bit, non-prefetchable) [size=64K]
+	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+	I/O behind bridge: 1e160000-1e160fff [size=4K] [16-bit]
+	Memory behind bridge: 60000000-600fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: 60100000-601fffff [size=1M] [32-bit]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Root Port (Slot-), MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Virtual Channel
+
+00:01.0 PCI bridge: Device 0e8d:0801 (rev 01) (prog-if 00 [Normal decode])
+	Device tree node: /sys/firmware/devicetree/base/pcie@1e140000/pcie@1,0
+	Flags: bus master, fast devsel, latency 0, IRQ 255
+	Memory at 60410000 (32-bit, non-prefetchable) [size=64K]
+	Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+	I/O behind bridge: 1e161000-1e161fff [size=4K] [16-bit]
+	Memory behind bridge: 60200000-602fffff [size=1M] [32-bit]
+	Prefetchable memory behind bridge: 60300000-603fffff [size=1M] [32-bit]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Root Port (Slot-), MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Virtual Channel
+
+01:00.0 Network controller: MEDIATEK Corp. MT7662E 802.11ac PCI Express Wireless Network Adapter
+	Subsystem: MEDIATEK Corp. MT7662E 802.11ac PCI Express Wireless Network Adapter
+	Device tree node: /sys/firmware/devicetree/base/pcie@1e140000/pcie@0,0/wifi@0,0
+	Flags: bus master, fast devsel, latency 0, IRQ 22
+	Memory at 60000000 (64-bit, non-prefetchable) [size=1M]
+	Expansion ROM at 60100000 [virtual] [disabled] [size=64K]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [148] Device Serial Number 00-00-00-00-00-00-00-00
+	Capabilities: [158] Latency Tolerance Reporting
+	Capabilities: [160] L1 PM Substates
+	Kernel driver in use: mt76x2e
+
+02:00.0 Network controller: MEDIATEK Corp. Device 7603
+	Subsystem: MEDIATEK Corp. Device 7603
+	Device tree node: /sys/firmware/devicetree/base/pcie@1e140000/pcie@1,0/wifi@0,0
+	Flags: bus master, fast devsel, latency 0, IRQ 23
+	Memory at 60200000 (32-bit, non-prefetchable) [size=1M]
+	Capabilities: [40] Power Management version 3
+	Capabilities: [50] MSI: Enable- Count=1/1 Maskable- 64bit+
+	Capabilities: [70] Express Endpoint, MSI 00
+	Capabilities: [100] Advanced Error Reporting
+	Capabilities: [140] Device Serial Number 00-00-00-00-00-00-00-00
+	Capabilities: [150] Latency Tolerance Reporting
+	Kernel driver in use: mt7603e
+
