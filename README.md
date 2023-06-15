@@ -7,4 +7,7 @@ https://github.com/antoinecarme/ml2cpp/issues/25
 
 Micropython is available on this platform, through openwrt/opkg (debian-like).
 
+![image](https://github.com/antoinecarme/OpenWRT_Xiaomi_Mi_Router_4A_Gigabit_Edition_data/assets/16481992/1c48804d-fc01-426b-8565-e11109b75741)
+
+
 ![image](https://github.com/antoinecarme/OpenWRT_Xiaomi_Mi_Router_4A_Gigabit_Edition_data/assets/16481992/40a19a3e-7ae8-4c09-b2a6-c7ac061d5174)
